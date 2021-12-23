@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Denis Rudolf Damian Kontek (denis82)">
+    <meta name="description" content="Portfolio">
+    <meta name="keywords" content="HTML, CSS, JavaScript,Php,C++,Front-end,Back-end,developer,Portfolio">
     <link rel="stylesheet" href="css/main.css">
     <script src="scripts/main.js"></script>
     <title>Strona Główna</title>
@@ -11,8 +14,50 @@
 <body>
     <header>
         <nav>
-            
+            <a href="#sg">Strona Główna</a>
+            <a href="#om">O Mnie</a>
+            <a href="#tech">Technologie</a>
+            <a href="#port">Portfolio</a>
+            <a href="#sm">SocialMedia</a>
+            <a href="">Kontakt</a>
         </nav>
     </header>
+    <main>
+        <section id="sg">
+                <p>
+                    Programowanie stron internetowych, aplikacji i innych rzeczy
+                </p>
+                <p>
+                    Front-end and back-end developer
+                </p>
+                <p>
+                    Denis Kontek
+                </p>
+            <button>
+                Poznaj mnie!
+            </button>
+        </section>
+        <section id="om">
+
+        </section>
+        <section id="tech">
+
+        </section>
+        <section id="port">
+
+        </section>
+        <section id="sm">
+
+        </section>
+    </main>
+    <footer>
+        <p>Wszelkie prawa zastrzeżone &copy; 2021 - Denis Rudolf Damian Kontek (denis82)</p>
+    </footer>
+    <form action="kontakt.php" method="POST">
+        <h1>Kontakt</h1>
+        <input type="text" name="email" required>
+        <input type="textare" name="text" required>
+        <input type="submit" value="Wyślij">
+    </form>
 </body>
 </html>
