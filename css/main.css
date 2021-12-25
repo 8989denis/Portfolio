@@ -2,24 +2,122 @@
     font-size: 20px;
 }
 body{
-    position: relative;
+    color: rgb(200,200,200);
+    width: 100%;
+    background-color: rgb(28, 28, 28);
     margin: 0 !important;
     padding: 0 !important;
     font-size: 16px;
+    display: inline-block;
 }
 header{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    overflow: hidden;
+}
+header>img{
     display: block;
+    height: 100%;
+    border-radius: 10%;
+    width: 3%;
+    float: left;
 }
 body>form{
     display: none;
 }
+nav{
+    text-align: right;
+    width: 97%;
+    height: 100%;
+    display: inline-block;
+}
 nav>a{
-  text-decoration: none;
-  cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    vertical-align: middle;
+}
+main{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+
 }
 #sg{
-    position: relative;
+    background-image: url("../images/tlo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 920px;
+    display: inline-block;
+}
+#sg>p{
+    font-size: 1.5rem;
+    padding:20px;
+    margin: 0px;
+}
+#sg>p:first-child{
+    margin-top: 10rem;
+}
+#sg>p:last-child{
+    margin-bottom: 20rem;
+}
+#sg>a{
+    text-decoration: underline yellowgreen;
+    text-align: center;
+    width: 7%;
+    display: block;
+    font-size: 1rem;
+    border: red solid 0.1em;
+    border-radius: 2em;
+    padding: 1em;
+    margin: 1rem;
+}
+#om{
+    margin-top: 1em;
+    width: 100%;
+    display: inline-block;
+    overflow: hidden;
+    border-bottom: red dotted 0.5em;
+    border-radius: 7em;
+    border-top: red dotted 0.5em;
+}
+#om>img{
+    display: block;
+    float: left;
+    width: 40%;
+    border:red solid 0.2em;
+    border-radius: 10em;
+    margin: 2rem 1em 1em 1em;
+
+}
+#om>article{
+    font-size: 1.5em;
+    overflow: hidden;
+    width: 50%;
+    display: block;
+    text-align: center;
+    margin-left: 1em;
+
+}
+#om>article>h1{
+    font-size: 2rem;
+    border-bottom: red dashed 0.125em;
 }
 footer{
+    text-align: center;
+    width: 100%;
     font-size: 1em;
+    display: inline-block;
+    width: 100%;
+}
+footer>p{
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 1rem;
+    border: dashed red 0.2em;
+    border-radius: 10rem;
+    padding: 1em;
+    border-width: medium;
 }
