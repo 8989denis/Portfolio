@@ -1,7 +1,16 @@
+/* DOMYŚLNE WARTOŚCI */
 :root{
     font-size: 20px;
+    --czerw: rgba(207, 0, 0, 0.863);
+    scroll-behavior: smooth;
 }
+@font-face {
+    font-family: 'Indie Flower';
+     src: url('../fonts/IndieFlower-Regular.ttf') format('truetype');
+    }
 body{
+    image-rendering: optimizeQuality;
+    font-family: Indie Flower;
     color: rgb(200,200,200);
     width: 100%;
     background-color: rgb(28, 28, 28);
@@ -10,7 +19,13 @@ body{
     font-size: 16px;
     display: inline-block;
 }
+a,a:link,a:active,a:disabled{
+    text-decoration: none;
+    color: var(--czerw);
+}
+/* HEADER */
 header{
+    display: inline-block;
     width: 100%;
     height: 100%;
     background-color: transparent;
@@ -23,20 +38,62 @@ header>img{
     width: 3%;
     float: left;
 }
-body>form{
-    display: none;
-}
+/* NAWIGACJA */
 nav{
     text-align: right;
     width: 97%;
     height: 100%;
     display: inline-block;
 }
-nav>a{
+@keyframes czekanie{
+    0%{
+        border-color: rgb(0, 129, 161);
+    }
+    25%{
+        border-color: var(--czerw);
+    }
+    50%{
+        border-color: rgb(255, 174, 0);
+    }
+    75%{
+        border-color: var(--czerw);
+    }
+    100%{
+        border-color: rgb(0, 129, 161);
+    }
+}
+nav>a,#sg>a{
+    font-weight: bolder;
     display: inline-block;
-    text-decoration: none;
+    margin: .5rem;
+    padding: .5rem;
     cursor: pointer;
-    vertical-align: middle;
+    transition: all 300ms;
+    border: rgb(0, 129, 161) solid 0.01em;
+    border-radius: 10rem;
+    animation-name: czekanie;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: czekanie;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: czekanie;
+    -moz-animation-duration: 3s;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-name: czekanie;
+    -ms-animation-duration: 3s;
+    -ms-animation-iteration-count: infinite;
+    -o-animation-name: czekanie;
+    -o-animation-duration: 3s;
+    -o-animation-iteration-count: infinite;
+}
+nav>a:hover,#sg>a:hover{
+    color: rgb(0, 129, 161);
+    transform: skewX(180deg);
+    -moz-transform: skewX(180deg);
+    -webkit-transform: skewX(180deg);
+    -o-transform: skewX(180deg);
+    -ms-transform: skewX(180deg);
 }
 main{
     width: 100%;
@@ -44,6 +101,7 @@ main{
     display: inline-block;
 
 }
+/* STRONA GŁÓWNA*/
 #sg{
     background-image: url("../images/tlo.jpg");
     background-repeat: no-repeat;
@@ -55,7 +113,7 @@ main{
 #sg>p{
     font-size: 1.5rem;
     padding:20px;
-    margin: 0px;
+    margin: 0;
 }
 #sg>p:first-child{
     margin-top: 10rem;
@@ -64,30 +122,29 @@ main{
     margin-bottom: 20rem;
 }
 #sg>a{
-    text-decoration: underline yellowgreen;
     text-align: center;
-    width: 7%;
     display: block;
     font-size: 1rem;
-    border: red solid 0.1em;
+    border: red solid .1em;
     border-radius: 2em;
+    margin-right: 75%;
     padding: 1em;
-    margin: 1rem;
 }
+/* O MNIE */
 #om{
     margin-top: 1em;
     width: 100%;
     display: inline-block;
     overflow: hidden;
-    border-bottom: red dotted 0.5em;
+    border-bottom: red dotted .5em;
     border-radius: 7em;
-    border-top: red dotted 0.5em;
+    border-top: red dotted .5em;
 }
 #om>img{
     display: block;
     float: left;
     width: 40%;
-    border:red solid 0.2em;
+    border:red solid .2em;
     border-radius: 10em;
     margin: 2rem 1em 1em 1em;
 
@@ -105,19 +162,88 @@ main{
     font-size: 2rem;
     border-bottom: red dashed 0.125em;
 }
+/* TECHNOLOGIE */
+#tech{
+    font-size: 1rem;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+#tech>h1{
+    font-size: 2rem;
+    border-bottom: red solid .07em;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#tech>p{
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+#tech>div{
+    display: inline-block;
+    margin: 1rem;
+}
+#tech>div>a{
+    display: block;
+    font-weight: bold;
+}
+#tech>div>a>p{
+    margin: 0;
+}
+/* Portfolio */
+#port{
+    border-top: var(--czerw) solid .01em;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+}
+#port>a{
+    display: inline-block;
+    width: 40%;
+    margin: 1%;
+}
+#port>a>img{
+    width: 100%;
+}
+/* SocialMedia */
+#sm{
+    display: inline-block;
+    width: 100%;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    border-top: red solid .01rem;
+}
+#sm>div{
+    display: inline-block;
+    margin: 1rem;
+}
+/* STOPKA */
 footer{
+    border-top: solid red .1em;
     text-align: center;
     width: 100%;
     font-size: 1em;
     display: inline-block;
-    width: 100%;
 }
-footer>p{
-    margin-left: 20%;
-    margin-right: 20%;
+footer>span>p{
+    cursor: pointer; 
+    font-size: 1rem; 
+    display: inline-block;
+    margin: 0;
+    margin-top: 1em;
+}
+footer>p:last-child{
+    margin-left: 10%;
+    margin-right: 10%;
     font-size: 1rem;
     border: dashed red 0.2em;
     border-radius: 10rem;
     padding: 1em;
     border-width: medium;
+}
+/* FORMULARZ KONTAKT */
+body>form{
+    display: none;
 }
