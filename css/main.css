@@ -13,7 +13,7 @@ body{
     font-family: Indie Flower;
     color: rgb(200,200,200);
     width: 100%;
-    background-color: rgb(28, 28, 28);
+    background-image: url("../images/website/background.png");
     margin: 0 !important;
     padding: 0 !important;
     font-size: 16px;
@@ -62,6 +62,30 @@ nav{
         border-color: rgb(0, 129, 161);
     }
 }
+@keyframes linkam {
+    0%{
+        color: rgb(0, 129, 161);
+        position: relative;
+        top: 0;
+    }
+    25%{
+        color:var(--czerw);
+        top: .5em;
+    }
+    50%{
+        top: -1em;
+    }
+    75%{
+        transform: translate(0,.5em) scale(0.8);
+        -webkit-transform: translate(0,.5em) scale(0.8);
+        -moz-transform: translate(0,.5em) scale(0.8);
+        -ms-transform: translate(0,.5em) scale(0.8);
+        -o-transform: translate(0,.5em) scale(0.8);
+    }
+    100%{
+        top: 0;
+    }
+}
 nav>a,#sg>a{
     font-weight: bolder;
     display: inline-block;
@@ -69,6 +93,10 @@ nav>a,#sg>a{
     padding: .5rem;
     cursor: pointer;
     transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -o-transition: all 300ms;
+    -ms-transition: all 300ms;
     border: rgb(0, 129, 161) solid 0.01em;
     border-radius: 10rem;
     animation-name: czekanie;
@@ -103,11 +131,11 @@ main{
 }
 /* STRONA GŁÓWNA*/
 #sg{
-    background-image: url("../images/tlo.jpg");
+    background-image: url("../images/website/sg_background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 920px;
+    min-height: 100vh;
     display: inline-block;
 }
 #sg>p{
@@ -156,7 +184,6 @@ main{
     display: block;
     text-align: center;
     margin-left: 1em;
-
 }
 #om>article>h1{
     font-size: 2rem;
@@ -184,11 +211,40 @@ main{
     margin: 1rem;
 }
 #tech>div>a{
+    transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    -ms-transition: all linear .3s;
     display: block;
     font-weight: bold;
 }
 #tech>div>a>p{
     margin: 0;
+    animation-name: linkam;
+    -moz-animation-name: linkam;
+    -ms-animation-name: linkam;
+    -o-animation-name: linkam;
+    -webkit-animation-name: linkam;
+    animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -ms-animation-duration: 2s;
+}
+#tech>div>a:hover,#sm>div:hover{
+    opacity: 0.5;
+    box-shadow: 0em .15em .15em .15em white;
+    transform: scale(0.8) translate(-5%,-5%);
+    -webkit-transform: scale(0.8) translate(-5%,-5%);
+    -ms-transform: scale(0.8) translate(-5%,-5%);
+    -moz-transform: scale(0.8) translate(-5%,-5%);
+    -o-transform: scale(0.8) translate(-5%,-5%);
 }
 /* Portfolio */
 #port{
@@ -197,6 +253,11 @@ main{
     width: 100%;
     text-align: center;
     font-size: 2rem;
+}
+#port>h1{
+    border-bottom: red solid .1rem;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 #port>a{
     display: inline-block;
@@ -215,9 +276,36 @@ main{
     text-align: center;
     border-top: red solid .01rem;
 }
+#sm>h1{
+    border-bottom: red solid .1rem;
+    margin-left: 5%;
+    margin-right: 5%;
+}
 #sm>div{
+    transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    -ms-transition: all linear .3s;
     display: inline-block;
     margin: 1rem;
+}
+#sm>div>a>p{
+    animation-name: linkam;
+    -moz-animation-name: linkam;
+    -ms-animation-name: linkam;
+    -o-animation-name: linkam;
+    -webkit-animation-name: linkam;
+    animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -ms-animation-duration: 2s;
 }
 /* STOPKA */
 footer{
@@ -235,6 +323,7 @@ footer>span>p{
     margin-top: 1em;
 }
 footer>p:last-child{
+    font-family:Georgia, 'Times New Roman', Times, serif;
     margin-left: 10%;
     margin-right: 10%;
     font-size: 1rem;
