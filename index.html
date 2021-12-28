@@ -14,15 +14,15 @@
 </head>
 <body>
     <header>
-            <img src="./images/website/images/Logo.jpg" alt="Logo denis82">
+            <img src="./images/website/images/Logo.jpg" alt="Logo denis82" class="hide">
         <nav>
             <a href="#sg">Strona Główna</a>
             <a href="#om">O Mnie</a>
             <a href="#tech">Technologie</a>
             <a href="#port">Portfolio</a>
             <a href="#sm" class="icon-link">SocialMedia</a>
-            <a onclick="funkcja();">Kontakt</a>
             <a id="menu" onclick="funkcja();">Pokaż Menu</a>
+            <a onclick="toogleKontakt();">Kontakt</a>
         </nav>
     </header>
     <main>
@@ -175,9 +175,10 @@
         <p>Wszelkie prawa zastrzeżone &copy; 2021 - Denis Rudolf Damian Kontek (denis82)</p>
     </footer>
     <form action="kontakt.php" method="POST">
+        <p onclick="toogleKontakt();">X</p>
         <h1>Kontakt</h1>
-        <input type="text" name="email" required>
-        <input type="textare" name="text" required>
+        <input type="text" name="email" required placeholder="Adres Email">
+        <textarea name="text" required placeholder="Wiadomość do mnie" rows="10"></textarea>
         <input type="submit" value="Wyślij">
     </form>
     </body>
