@@ -1,0 +1,44 @@
+
+/* STRONA GŁÓWNA*/
+
+#sg{
+    background-image: url("../images/website/sg_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    display: inline-block;
+}
+#sg>p{
+    font-size: 1.5rem;
+    padding:20px;
+    margin: 0;
+}
+#sg>p:first-child{
+    margin-top: 10rem;
+}
+#sg>p:last-child{
+    margin-bottom: 20rem;
+}
+#sg>a{
+    text-align: center;
+    display: block;
+    font-size: 1rem;
+    border: red solid .1em;
+    border-radius: 2em;
+    margin-right: 75%;
+    padding: 1em;
+}
+
+/* KOMPATYBILNOŚĆ */
+
+@media only screen and (max-width: 800px) {
+    #sg>a{
+        margin-right: 50%;
+    }
+}
+@media only screen and (max-width: 630px){
+    #sg>a{
+        margin-right: 30%;
+    }
+}

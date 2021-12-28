@@ -1,0 +1,33 @@
+
+/* O MNIE */
+
+#om{
+    margin-top: 1em;
+    width: 100%;
+    display: inline-block;
+    overflow: hidden;
+    border-bottom: red dotted .5em;
+    border-radius: 7em;
+    border-top: red dotted .5em;
+}
+#om>img{
+    display: block;
+    float: left;
+    width: 40%;
+    border:red solid .2em;
+    border-radius: 50%;
+    margin: 2rem 1em 1em 1em;
+
+}
+#om>article{
+    font-size: 1.5em;
+    overflow: hidden;
+    width: 50%;
+    display: block;
+    text-align: center;
+    margin-left: 1em;
+}
+#om>article>h1{
+    font-size: 2rem;
+    border-bottom: red dashed 0.125em;
+}

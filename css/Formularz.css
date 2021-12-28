@@ -1,0 +1,89 @@
+
+/* FORMULARZ KONTAKT */
+
+body>form{
+    display: none;
+    position: fixed;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("../images/website/background.png");
+    border-radius: 5%;
+    overflow: hidden;
+    border: .1em aqua solid;
+    box-shadow: 0 0 1em rgba(6, 255, 6, 0.863);
+}
+body>form>p{
+    margin: 0;
+    position: absolute;
+    top: 2%;
+    right: 1%;
+    font-weight: bolder;
+    font-size: 1rem;
+    background-color: rgba(10, 21, 119, 0.562);
+    color: red;
+    width: 1.5rem;
+    text-align: center;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: linear 500ms;
+    -webkit-transition: linear 500ms;
+    -ms-transition: linear 500ms;
+    -o-transition: linear 500ms;
+    -moz-transition: linear 500ms;
+}
+body>form>p:hover{
+    background-color: rgba(117, 233, 2, 0.568);
+}
+body>form>input,body>form>h1,body>form>textarea{
+    text-align: center;
+    display: block;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+body>form>h1{
+    border-bottom: solid red .1rem;
+    margin-top: 5%;
+    width: 85%;
+    animation-name: naglowek;
+    -moz-animation-name: naglowek;
+    -webkit-animation-name: naglowek;
+    -ms-animation-name: naglowek;
+    -o-animation-name: naglowek;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    animation-duration: 3s;
+    -webkit-animation-duration: 3s;
+    -ms-animation-duration: 3s;
+    -o-animation-duration: 3s;
+    -moz-animation-duration: 3s;
+}
+
+/* KOMPATYBILNOŚĆ */
+
+@media only screen and (max-width: 1200px){
+    body>form{
+        width: 70%;
+        left: 15%;
+    }
+}
+@media only screen and (max-width: 410px){
+    body>form{
+        width: 90%;
+        left: 5%;
+    }
+}
+@media only screen and (max-width: 630px){
+    body>form{
+        width: 80%;
+        left: 10%;
+    }
+}

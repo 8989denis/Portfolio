@@ -1,0 +1,74 @@
+
+/* TECHNOLOGIE */
+
+#tech{
+    font-size: 1rem;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+#tech>h1{
+    font-size: 2rem;
+    border-bottom: red solid .07em;
+    margin-left: 5%;
+    margin-right: 5%;
+    animation-name: naglowek;
+    -moz-animation-name: naglowek;
+    -webkit-animation-name: naglowek;
+    -ms-animation-name: naglowek;
+    -o-animation-name: naglowek;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    animation-duration: 3s;
+    -webkit-animation-duration: 3s;
+    -ms-animation-duration: 3s;
+    -o-animation-duration: 3s;
+    -moz-animation-duration: 3s;
+}
+#tech>p{
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+#tech>div{
+    display: inline-block;
+    margin: 1rem;
+}
+#tech>div>a{
+    transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    display: block;
+    font-weight: bold;
+}
+#tech>div>a>p{
+    margin: 0;
+    animation-name: linkam;
+    -moz-animation-name: linkam;
+    -ms-animation-name: linkam;
+    -o-animation-name: linkam;
+    -webkit-animation-name: linkam;
+    animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -ms-animation-duration: 2s;
+}
+#tech>div>a:hover,#sm>div:hover{
+    opacity: 0.5;
+    box-shadow: 0em .15em .15em .15em white;
+    transform: scale(0.8) translate(-5%,-5%);
+    -webkit-transform: scale(0.8) translate(-5%,-5%);
+    -ms-transform: scale(0.8) translate(-5%,-5%);
+    -moz-transform: scale(0.8) translate(-5%,-5%);
+    -o-transform: scale(0.8) translate(-5%,-5%);
+}

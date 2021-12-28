@@ -1,0 +1,73 @@
+
+/* Portfolio */
+
+#port{
+    border-top: var(--czerw) solid .01em;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+}
+#port>h1{
+    border-bottom: red solid .1rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    animation-name: naglowek;
+    -moz-animation-name: naglowek;
+    -webkit-animation-name: naglowek;
+    -ms-animation-name: naglowek;
+    -o-animation-name: naglowek;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    animation-duration: 3s;
+    -webkit-animation-duration: 3s;
+    -ms-animation-duration: 3s;
+    -o-animation-duration: 3s;
+    -moz-animation-duration: 3s;
+}
+#port>a{
+    display: inline-block;
+    width: 40%;
+    margin: 1%;
+    transition: linear 500ms;
+    -webkit-transition: linear 500ms;
+    -moz-transition: linear 500ms;
+    -o-transition: linear 500ms;
+    -ms-transition: linear 500ms;
+    position: relative;
+    border: solid .1rem var(--czerw);
+    animation-name: obrazki;
+    -webkit-animation-name: obrazki;
+    -moz-animation-name: obrazki;
+    -o-animation-name: obrazki;
+    -ms-animation-name: obrazki;
+    animation-duration: 3s;
+    -webkit-animation-duration: 3s;
+    -moz-animation-duration: 3s;
+    -o-animation-duration: 3s;
+    -ms-animation-duration: 3s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+}
+#port>a>img{
+    display: block;
+    width: 100%;
+}
+#port>a>p{
+    position: absolute;
+    font-weight: bold;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    left: 0;
+    margin: 0;
+}
+#port>a:hover{
+    opacity: 0.5;
+}

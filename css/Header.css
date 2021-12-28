@@ -1,0 +1,86 @@
+
+/* HEADER */
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url('../images/website/background.png'); 
+}
+
+/* ZDJĘCIE */
+
+header>img{
+    border-radius: 10%;
+    width: 3%;
+    float: left;
+}
+
+/* NAWIGACJA */
+
+nav{
+    float: right;
+}
+nav>a,#sg>a{
+    font-weight: bolder;
+    display: inline-block;
+    margin: .3rem;
+    padding: .5rem;
+    cursor: pointer;
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -o-transition: all 300ms;
+    -ms-transition: all 300ms;
+    border: rgb(0, 129, 161) solid 0.01em;
+    border-radius: 10rem;
+    animation-name: czekanie;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: czekanie;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: czekanie;
+    -moz-animation-duration: 5s;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-name: czekanie;
+    -ms-animation-duration: 5s;
+    -ms-animation-iteration-count: infinite;
+    -o-animation-name: czekanie;
+    -o-animation-duration: 5s;
+    -o-animation-iteration-count: infinite;
+}
+nav>#menu{
+    display: none;
+    font-size: 1em;
+}
+nav>a:hover,#sg>a:hover{
+    color: rgb(0, 129, 161);
+    transform: skewX(180deg);
+    -moz-transform: skewX(180deg);
+    -webkit-transform: skewX(180deg);
+    -o-transform: skewX(180deg);
+    -ms-transform: skewX(180deg);
+}
+
+/* KOMPATYBILNOŚĆ */
+
+@media only screen and (max-width: 800px) {
+    nav>a{
+        font-size: 1em;
+        margin: .2rem;
+        padding: .2rem;
+    }
+}
+@media only screen and (max-width: 630px){
+    nav>a{
+        display: none;
+    }
+    nav>a:last-child{
+        display: inline-block;
+    }
+    nav>#menu{
+        display: inline-block;
+    }
+}
