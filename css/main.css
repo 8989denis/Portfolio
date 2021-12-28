@@ -9,7 +9,6 @@
      src: url('../fonts/IndieFlower-Regular.ttf') format('truetype');
     }
 body{
-    image-rendering: optimizeQuality;
     font-family: Indie Flower;
     color: rgb(200,200,200);
     width: 100%;
@@ -17,7 +16,6 @@ body{
     margin: 0 !important;
     padding: 0 !important;
     font-size: 16px;
-    display: inline-block;
 }
 a,a:link,a:active,a:disabled{
     text-decoration: none;
@@ -25,25 +23,19 @@ a,a:link,a:active,a:disabled{
 }
 /* HEADER */
 header{
-    display: inline-block;
     width: 100%;
-    height: 100%;
-    background-color: transparent;
-    overflow: hidden;
+    position: fixed;
+    background-image: url('../images/website/background.png');
 }
 header>img{
-    display: block;
-    height: 100%;
     border-radius: 10%;
     width: 3%;
     float: left;
 }
 /* NAWIGACJA */
 nav{
-    text-align: right;
-    width: 97%;
+    float: right;
     height: 100%;
-    display: inline-block;
 }
 @keyframes czekanie{
     0%{
@@ -76,11 +68,11 @@ nav{
         top: -1em;
     }
     75%{
-        transform: translate(0,.5em) scale(0.8);
-        -webkit-transform: translate(0,.5em) scale(0.8);
-        -moz-transform: translate(0,.5em) scale(0.8);
-        -ms-transform: translate(0,.5em) scale(0.8);
-        -o-transform: translate(0,.5em) scale(0.8);
+        transform: translate(0,.25em) scale(0.8);
+        -webkit-transform: translate(0,.25em) scale(0.8);
+        -moz-transform: translate(0,.25em) scale(0.8);
+        -ms-transform: translate(0,.25em) scale(0.8);
+        -o-transform: translate(0,.25em) scale(0.8);
     }
     100%{
         top: 0;
@@ -89,7 +81,7 @@ nav{
 nav>a,#sg>a{
     font-weight: bolder;
     display: inline-block;
-    margin: .5rem;
+    margin: .3rem;
     padding: .5rem;
     cursor: pointer;
     transition: all 300ms;
@@ -114,6 +106,11 @@ nav>a,#sg>a{
     -o-animation-name: czekanie;
     -o-animation-duration: 3s;
     -o-animation-iteration-count: infinite;
+}
+nav>#menu{
+    display: none;
+    font-size: 1em;
+    margin: .5rem;
 }
 nav>a:hover,#sg>a:hover{
     color: rgb(0, 129, 161);
@@ -288,7 +285,7 @@ main{
     -o-transition: all linear .3s;
     -ms-transition: all linear .3s;
     display: inline-block;
-    margin: 1rem;
+    margin: .5rem;
 }
 #sm>div>a>p{
     animation-name: linkam;
@@ -335,4 +332,25 @@ footer>p:last-child{
 /* FORMULARZ KONTAKT */
 body>form{
     display: none;
+}
+@media only screen and (max-width: 800px) {
+    nav>a{
+        font-size: 1em;
+        margin: .2rem;
+        padding: .2rem;
+    }
+    #sg>a{
+        margin-right: 50%;
+    }
+}
+@media only screen and (max-width: 630px){
+    nav>a{
+        display: none;
+    }
+    #sg>a{
+        margin-right: 30%;
+    }
+    nav>#menu{
+        display: inline-block;
+    }
 }

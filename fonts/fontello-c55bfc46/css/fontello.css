@@ -56,7 +56,7 @@
 
 .icon-link:before { content: '\e800'; font-size: .9em; color: rgb(255, 242, 242);} /* '' */
 .icon-youtube:before { content: '\f167'; font-size: 5rem; color: rgb(255, 242, 242); background-color: red; border-radius: .1em;} /* '' */
-  .icon-instagram:before { content: '\f16d'; font-size: 5rem; color: rgb(255, 242, 242); background-color: darkviolet; border-radius: 1.5rem;} /* '' */
+.icon-instagram:before { content: '\f16d'; font-size: 5rem; color: rgb(255, 242, 242); background-color: darkviolet; border-radius: 1.5rem;} /* '' */
 .icon-wikipedia-w:before { content: '\f266'; font-size: 2rem;} /* '' */
 .icon-question-circle-o:before { content: '\f29c'; font-size:1rem;} /* '' */
 .icon-github-squared:before { content: '\f300'; font-size: 5rem; color: rgb(0, 2, 95); background-color: rgb(255, 242, 242); border-radius: 1.5rem;} /* '' */
