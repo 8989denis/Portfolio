@@ -31,3 +31,6 @@
     font-size: 2rem;
     border-bottom: red dashed 0.125em;
 }
+strong{
+    color: rgba(207, 0, 0, 0.863);
+}

@@ -37,6 +37,7 @@
     -ms-transition: all linear .3s;
     display: inline-block;
     margin: .5rem;
+    width: 140px;
 }
 #sm>div>a>p{
     animation-name: linkam;

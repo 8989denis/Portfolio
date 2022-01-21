@@ -15,6 +15,7 @@ body>form{
     overflow: hidden;
     border: .1em aqua solid;
     box-shadow: 0 0 1em rgba(6, 255, 6, 0.863);
+    overflow: auto;
 }
 body>form>p{
     margin: 0;

@@ -54,6 +54,7 @@
     -o-animation-iteration-count: infinite;
     -moz-animation-iteration-count: infinite;
     -ms-animation-iteration-count: infinite;
+    font-size: 3vw;
 }
 #port>a>img{
     display: block;

@@ -1,7 +1,4 @@
-var licznik=true,licznik2=true;
-function funkcja(){
-    alert();
-}
+var licznik=true,licznik2=true,licznik3=true;
 function licencje(){
     if(licznik==false){
         document.querySelector('footer>span>p:first-child').innerHTML='Licencje';
@@ -19,5 +16,14 @@ function toogleKontakt(){
     }else{
         document.querySelector('body>form').style.display="block";
         licznik2=false;
+    }
+}
+function menu(){
+    if(licznik3==false){
+        document.querySelector('#menu').classList.add('');
+        licznik3 = true;
+    }else{
+        document.querySelector('#menu').classList.add('');
+        licznik3=false;
     }
 }

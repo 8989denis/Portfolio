@@ -4,6 +4,9 @@
     --czerw: rgba(207, 0, 0, 0.863);
     scroll-behavior: smooth;
 }
+*{
+    box-sizing: border-box;
+}
 @font-face {
     font-family: 'Indie Flower';
      src: url('../fonts/IndieFlower-Regular.ttf') format('truetype');
@@ -26,5 +29,8 @@ main{
     width: 100%;
     height: 100%;
     display: inline-block;
-
+}
+::selection{
+    color: mediumaquamarine;
+    background-color: transparent;
 }

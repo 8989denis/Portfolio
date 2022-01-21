@@ -4,16 +4,16 @@
 header{
     width: 100%;
     position: fixed;
-    top: 0;
-    left: 0;
     background-image: url('../images/website/background.png');
+    z-index: 1;
+    height: 60px;
 }
 
 /* ZDJĘCIE */
 
 header>img{
     border-radius: 10%;
-    width: 3%;
+    height: 100%;
     float: left;
 }
 
@@ -21,6 +21,7 @@ header>img{
 
 nav{
     float: right;
+    height: 100%;
 }
 nav>a,#sg>a{
     font-weight: bolder;
@@ -66,14 +67,7 @@ nav>a:hover,#sg>a:hover{
 
 /* KOMPATYBILNOŚĆ */
 
-@media only screen and (max-width: 800px) {
-    nav>a{
-        font-size: 1em;
-        margin: .2rem;
-        padding: .2rem;
-    }
-}
-@media only screen and (max-width: 630px){
+@media only screen and (max-width: 730px){
     nav>a{
         display: none;
     }
