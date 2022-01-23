@@ -31,7 +31,7 @@
 #om>article>fieldset>p>a,#om>article>p>a,#om>article>p>a:link,#om>article>p>a:active{
     text-decoration: underline !important;
 }
-#om>article>fieldset>p>a>strong:hover,#om>article>p>a:hover{
+#om>article>fieldset>p>a>strong:hover,#om>article>p>a>strong:hover{
     opacity: .8;
     font-size: 1.5rem;
     color: rgb(0, 129, 161) !important;
