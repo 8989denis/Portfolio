@@ -22,7 +22,8 @@
 #om>article{
     font-size: 1.5em;
     overflow: hidden;
-    width: 50%;
+    width: 48%;
+    margin: 1%;
     display: block;
     text-align: center;
     margin-left: 1em;

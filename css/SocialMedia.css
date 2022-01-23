@@ -4,12 +4,13 @@
 #sm{
     display: inline-block;
     width: 100%;
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: bold;
     text-align: center;
     border-top: red solid .01rem;
 }
 #sm>h1{
+    font-size: 2rem;
     border-bottom: red solid .1rem;
     margin-left: 5%;
     margin-right: 5%;

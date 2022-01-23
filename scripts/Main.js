@@ -19,11 +19,17 @@ function toogleKontakt(){
     }
 }
 function menu(){
+    document.querySelector('header').classList.toggle('menuHeader');
+    document.querySelector('header>nav').classList.toggle('menuNav');
+    let menua = document.querySelectorAll('header>nav>a');
+    menua.forEach(menua => {
+        menua.classList.toggle('menuA');
+    });
     if(licznik3==false){
-        document.querySelector('#menu').classList.add('');
+        document.querySelector('#menu').innerHTML="Pokaż Menu";
         licznik3 = true;
     }else{
-        document.querySelector('#menu').classList.add('');
+        document.querySelector('#menu').innerHTML="Schowaj Menu";
         licznik3=false;
     }
 }

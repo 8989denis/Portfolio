@@ -25,7 +25,9 @@
     width: 30vw;
     padding: 1em;
 }
-
+#sg>a{
+    -webkit-box-reflect: below 100% linear-gradient(transparent, white);
+}
 /* KOMPATYBILNOŚĆ */
 
 @media only screen and (max-width: 800px) {

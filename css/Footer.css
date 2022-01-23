@@ -25,3 +25,11 @@ footer>p:last-child{
     padding: 1em;
     border-width: medium;
 }
+@media only screen and (max-width: 350px){
+    footer>span>p{
+        font-size: 1em;
+    }
+    footer>p:last-child{
+        font-size: 1em;
+    }
+}
