@@ -7,31 +7,71 @@
     display: inline-block;
     overflow: hidden;
     border-bottom: red dotted .5em;
-    border-radius: 7em;
+    border-radius: 5em;
     border-top: red dotted .5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: oblique;
 }
 #om>img{
     display: block;
     float: left;
     width: 40%;
     border:red solid .2em;
-    border-radius: 50%;
-    margin: 2rem 1em 1em 1em;
+    border-radius: 40%;
+    margin: 2em 1em 1em .5em;
 
 }
 #om>article{
     font-size: 1.5em;
     overflow: hidden;
-    width: 48%;
-    margin: 1%;
+    width: 55%;
     display: block;
     text-align: center;
-    margin-left: 1em;
+}
+#om>article>fieldset>p>a,#om>article>p>a,#om>article>p>a:link,#om>article>p>a:active{
+    text-decoration: underline !important;
+}
+#om>article>fieldset>p>a>strong:hover,#om>article>p>a:hover{
+    opacity: .8;
+    font-size: 1.5rem;
+    color: rgb(0, 129, 161) !important;
 }
 #om>article>h1{
     font-size: 2rem;
+    color: rgb(0, 129, 161);
     border-bottom: red dashed 0.125em;
 }
 strong{
+    transition: all 300ms;
+    -moz-transition: all 300ms;
+    -o-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -webkit-transition: all 300ms;
     color: rgba(207, 0, 0, 0.863);
+}
+#om>article>fieldset{
+    border-color: var(--czerw);
+    border-style: dashed;
+    border-width: .2em;
+    border-radius: 1em;
+}
+#om>article>fieldset>legend{
+    font-weight: 800;
+    text-decoration: underline;
+    color: rgb(0, 129, 161);
+}
+#om>article>p:last-child{
+    margin-bottom: 2em;
+}
+@media only screen and (max-width: 700px) {
+    #om>img{
+        margin: 0;
+        margin-top: 1em;
+        width: 100%;
+        border-radius: 25%;
+    }
+    #om>article{
+        margin: 2%;
+        width: 96%;
+    }
 }

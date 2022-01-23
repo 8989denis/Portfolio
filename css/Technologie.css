@@ -57,11 +57,11 @@
     -ms-animation-iteration-count: infinite;
     -o-animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
-    animation-duration: 2s;
-    -webkit-animation-duration: 2s;
-    -o-animation-duration: 2s;
-    -moz-animation-duration: 2s;
-    -ms-animation-duration: 2s;
+    animation-duration: 6s;
+    -webkit-animation-duration: 6s;
+    -o-animation-duration: 6s;
+    -moz-animation-duration: 6s;
+    -ms-animation-duration: 6s;
 }
 #tech>div>a:hover,#sm>div:hover{
     opacity: 0.5;

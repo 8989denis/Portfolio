@@ -54,12 +54,12 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
-.icon-link:before { content: '\e800'; font-size: .9em; color: rgb(255, 242, 242);} /* '' */
-.icon-youtube:before { content: '\f167'; font-size: 5rem; color: rgb(255, 242, 242); background-color: red; border-radius: .1em;} /* '' */
-.icon-instagram:before { content: '\f16d'; font-size: 5rem; color: rgb(255, 242, 242); background-color: darkviolet; border-radius: 1.5rem;} /* '' */
+.icon-link:before { content: '\e800'; font-size: .9em; color: rgba(255, 242, 242, 0.9);} /* '' */
+.icon-youtube:before { content: '\f167'; font-size: 5rem; color: rgba(255, 242, 242, 0.9); background-color: red; border-radius: .1em;} /* '' */
+.icon-instagram:before { content: '\f16d'; font-size: 5rem; color: rgba(255, 242, 242, 0.9); background-color: darkviolet; border-radius: 1.5rem;} /* '' */
 .icon-wikipedia-w:before { content: '\f266'; font-size: 2rem;} /* '' */
 .icon-question-circle-o:before { content: '\f29c'; font-size:1rem;} /* '' */
-.icon-github-squared:before { content: '\f300'; font-size: 5rem; color: rgb(0, 2, 95); background-color: rgb(255, 242, 242); border-radius: 1.5rem;} /* '' */
-.icon-twitter-squared:before { content: '\f304'; font-size: 5rem; color: rgb(8, 223, 223); background-color: rgb(255, 242, 242); border-radius: 1.5rem;} /* '' */
-.icon-facebook-squared:before { content: '\f308'; font-size: 5rem; color: rgba(0, 46, 253, 0.918); background-color: rgb(255, 242, 242); border-radius: 1.5rem;} /* '' */
-.icon-linkedin-squared:before { content: '\f30c'; font-size: 5rem; color: rgb(94, 71, 241); background-color: rgb(255, 242, 242); border-radius: 1.5rem;} /* '' */
+.icon-github-squared:before { content: '\f300'; font-size: 5rem; color: rgb(0, 2, 95); background-color: rgba(255, 242, 242, 0.9); border-radius: 1.5rem;} /* '' */
+.icon-twitter-squared:before { content: '\f304'; font-size: 5rem; color: rgba(3, 218, 218, 0.9); background-color: rgba(255, 242, 242, 0.9); border-radius: 1.5rem;} /* '' */
+.icon-facebook-squared:before { content: '\f308'; font-size: 5rem; color: rgba(0, 46, 253, 0.918); background-color: rgba(255, 242, 242, 0.9); border-radius: 1.5rem;} /* '' */
+.icon-linkedin-squared:before { content: '\f30c'; font-size: 5rem; color: rgb(94, 71, 241); background-color: rgba(255, 242, 242, 0.9); border-radius: 1.5rem;} /* '' */

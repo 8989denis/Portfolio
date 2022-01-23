@@ -106,8 +106,10 @@ nav>a:hover,#sg>a:hover{
     text-align: center;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 90vw;
     height: 100vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
 }
 .menuA {
     display: block;
@@ -121,11 +123,15 @@ nav>a:hover,#sg>a:hover{
     -ms-transition: all 300ms;
 }
 .menuA:first-child{
-    margin-top: 10vh;
+    margin-top: 3vh;
     margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
 }
 .menuA:last-child{
     margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
 }
 /* KOMPATYBILNOŚĆ */
 
@@ -142,7 +148,7 @@ nav>a:hover,#sg>a:hover{
 }
 @media only screen and (max-width: 500px){
     header>div>p:first-child{
-        font-size: .8em;
+        font-size: 1em;
     }
     header>div>p:last-child{
         font-size: .8em;
