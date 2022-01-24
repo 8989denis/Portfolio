@@ -165,3 +165,11 @@ nav>a:hover,#sg>a:hover{
         font-size: 1em !important;
     }
 }
+@media only screen and (max-width: 300px){
+    header>div>p:first-child{
+        font-size: .4em;
+    }
+    header>div>p:last-child{
+        font-size: .2em;
+    }
+}

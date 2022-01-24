@@ -25,7 +25,7 @@ echo '<script>alert("dziękujemy za wysłanie formularza");</script>';
     <script src="./scripts/Main.js"></script>
     <title>Portfolio</title>
 </head>
-<body>
+<body onload="wczytaj();">
     <header>
         <div>
             <p>Denis Kontek</p>
@@ -44,7 +44,7 @@ echo '<script>alert("dziękujemy za wysłanie formularza");</script>';
     <main>
         <section id="sg">
                 <ol>
-                    Programista :
+                    Programista
                     <li>Stron Internetowych</li>
                     <li>Aplikacji Internetowych</li>
                     <li>Aplikacji Desktopowych</li>
@@ -223,13 +223,24 @@ echo '<script>alert("dziękujemy za wysłanie formularza");</script>';
         <span class="icon-question-circle-o"><p onclick="licencje();">Licencje</p></span>
         <p>Wszelkie prawa zastrzeżone 2021-2022 &copy; Denis Rudolf Damian Kontek</p>
     </footer>
-    <form action="./kontakt.php" method="POST">
+    <form action="kontakt.php" method="POST">
         <p onclick="toogleKontakt();">X</p>
         <h1>Kontakt</h1>
-        <input id="email" type="text" name="email" required placeholder="Adres Email">
-        <textarea id="textarea" name="text" required placeholder="Wiadomość do mnie" rows="10"></textarea>
+        <input type="text" name="email" required placeholder="Adres Email">
+        <textarea name="text" required placeholder="Wiadomość do mnie" rows="10"></textarea>
         <input type="submit" value="Wyślij">
     </form>
     <a href="#sg">&UpArrow;</a>
+    <div>
+        <p>
+            Witaj na mojej stronie kod do mojej strony znajdziesz <a href="https://github.com/8989denis/Portfolio" target="_blank"><strong>Tutaj</strong></a>.
+        </p>
+        <button onclick="zapisz(1);">
+            Zamknij
+        </button>
+        <button onclick="zapisz(2);">
+            Nie pokazuj ponownie
+        </button>
+    </div>
     </body>
 </html>

@@ -34,6 +34,62 @@ main{
     color: mediumaquamarine;
     background-color: transparent;
 }
+/* POPUP */
+body>div{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+    width: 90vw;
+    height: 80vh;
+    background-image: url("../images/website/background.png");
+    border: solid red .1rem;
+    border-radius: 15%;
+    overflow: hidden;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 3rem;
+    text-align: center;
+}
+body>div>p{
+    max-width: 80%;
+    height: 10%;
+    margin: 5% 0 5% 0;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: -2px 0 yellow, 0 2px blue, 2px 0 red, 0 -2px green;
+}
+body>div>p>a>strong:hover{
+    opacity: .8;
+    color: rgb(0, 129, 161) !important;
+}
+body>div>button{
+    width: 80%;
+    height: 22.5%;
+    border: rgba(207, 0, 0, 0.863) solid .1rem;
+    border-radius: 30%;
+    font-size: 2rem;
+    transition: linear 300ms;
+    -webkit-transition: linear 300ms;
+    -o-transition: linear 300ms;
+    -moz-transition: linear 300ms;
+    -ms-transition: linear 300ms;
+}
+body>div>button:hover{
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    color: tomato;
+    font-weight: bolder;
+    background-color: rgba(0, 129, 161, 0.5);
+    text-transform: uppercase;
+}
 /* strzałka do góry */
 body>a{
     background-color:rgba(0, 0, 0, 0.671);
@@ -51,9 +107,27 @@ body>a{
 body>a:hover{
     background-color: rgba(128, 128, 128, 0.4);
 }
+@media only screen and (max-width: 1450px){
+    body>div>p{
+        font-size: 2rem;
+    }
+}
+@media only screen and (max-width: 666px){
+        body>div>p{
+            font-size: 1.7rem;
+        }
+}
 @media only screen and (max-width: 500px){
     body>a{
         bottom: 3%;
         right: 5%;
+    }
+    body>div>p{
+        font-size: 1.5rem;
+        height: 20%;
+    }
+    body>div>button{
+        height: 15%;
+        font-size: 1.5rem;
     }
 }

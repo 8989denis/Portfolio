@@ -28,7 +28,7 @@
     display: block;
     text-align: center;
 }
-#om>article>fieldset>p>a,#om>article>p>a,#om>article>p>a:link,#om>article>p>a:active{
+#om>article>fieldset>p>a,#om>article>p>a,#om>article>p>a:link,#om>article>p>a:active,body>div>p>a{
     text-decoration: underline !important;
 }
 #om>article>fieldset>p>a>strong:hover,#om>article>p>a>strong:hover{

@@ -33,3 +33,17 @@ function menu(){
         licznik3=false;
     }
 }
+function zapisz(arg){
+    localStorage.setItem('tmp',arg);
+    document.querySelector('body>div').style.display="none";
+}
+function wczytaj(){
+    let arg = localStorage.getItem('tmp');
+    if(arg == null){
+        localStorage.setItem('tmp','1')
+        wczytaj();
+    }
+    else if(arg == 1){
+        document.querySelector('body>div').style.display="flex";
+    }
+}

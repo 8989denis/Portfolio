@@ -22,7 +22,7 @@
     <script src="./scripts/Main.js"></script>
     <title>Portfolio</title>
 </head>
-<body>
+<body onload="wczytaj();">
     <header>
         <div>
             <p>Denis Kontek</p>
@@ -228,5 +228,16 @@
         <input type="submit" value="Wyślij">
     </form>
     <a href="#sg">&UpArrow;</a>
+    <div>
+        <p>
+            Witaj na mojej stronie kod do mojej strony znajdziesz <a href="https://github.com/8989denis/Portfolio" target="_blank"><strong>Tutaj</strong></a>.
+        </p>
+        <button onclick="zapisz(1);">
+            Zamknij
+        </button>
+        <button onclick="zapisz(2);">
+            Nie pokazuj ponownie
+        </button>
+    </div>
     </body>
 </html>
