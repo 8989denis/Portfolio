@@ -70,5 +70,21 @@
     margin: 0;
 }
 #port>a:hover{
-    opacity: .6;
+    border-radius: 2rem;
+    overflow: hidden;
+    animation-name: pow;
+    -webkit-animation-name: pow;
+    -o-animation-name: pow;
+    -moz-animation-name: pow;
+    -ms-animation-name: pow;
+    animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    -o-animation-iteration-count: 1;
+    -ms-animation-iteration-count: 1;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -moz-transform: scale(1.1);
 }

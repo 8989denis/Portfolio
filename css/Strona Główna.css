@@ -4,34 +4,52 @@
 #sg{
     background-image: url("../images/website/sg_background.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100vw 100vh;
+    background-position: center;
     width: 100%;
     min-height: 100vh;
-    display: inline-block;
-}
-#sg>p{
-    font-size: 1.5rem;
-    padding:20px;
-    margin: 0;
-}
-#sg>p:first-child{
-    margin-top: 10rem;
-}
-#sg>a{
+    display: grid;
     text-align: center;
-    font-size: 1rem;
-    border: red solid .1em;
-    border-radius: 2em;
-    width: 30vw;
-    padding: 1em;
+    align-content: center;
+    justify-items: center;
+    justify-content: space-around;
+}
+#sg>ol{
+    font-size: 1.5rem;
+    color: rgba(0, 245, 61, 0.8);
+    background-color: rgba(128, 128, 128, 0.9);
+    max-width: 80vw;
+    border-radius: 2rem;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 1000;
+    padding: 0 2em 0 2em;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 #sg>a{
-    -webkit-box-reflect: below 100% linear-gradient(transparent, white);
+    font-size: 1.5rem;
+    color: rgb(179, 46, 46);
+    border-radius: 2em;
+    width: 60vw;
+    background-color: hsla(115, 100%, 36%, 0.5);
+    margin: 0 20vw 30vh 20vw;
+    padding: 1em;
+    -webkit-box-reflect: below 10% linear-gradient(transparent, white);
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -o-transition: all 300ms;
+    -ms-transition: all 300ms;
+    border: rgb(0, 129, 161) solid .1em;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 1000;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
-/* KOMPATYBILNOŚĆ */
-
-@media only screen and (max-width: 800px) {
-    #sg>a{
-        width: 60vw;
+#sg>a:hover{
+    color: lightcoral;
+    background-color: rgba(0, 94, 126, 0.5);
+}
+@media only screen and (max-width: 380px){
+    #sg>ol,#sg>a{
+       font-size: 1rem !important;
     }
 }

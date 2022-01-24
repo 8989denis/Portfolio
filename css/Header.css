@@ -39,7 +39,7 @@ nav{
     float: right;
     height: 100%;
 }
-nav>a,#sg>a{
+nav>a{
     font-weight: bolder;
     display: inline-block;
     margin: .3rem;
@@ -68,8 +68,8 @@ nav>a,#sg>a{
     -o-animation-duration: 5s;
     -o-animation-iteration-count: infinite;
 }
-nav>a:hover,#sg>a:hover{
-    background-color: rgba(128, 128, 128, 0.432);
+nav>a:hover{
+    background-color: rgba(128, 128, 128, 0.500);
 }
 nav>#menu{
     display: none;
@@ -103,6 +103,8 @@ nav>a:hover,#sg>a:hover{
     background-image: none;
 }
 .menuNav{
+    margin-top: 1vh;
+    display: flex;
     text-align: center;
     top: 0;
     left: 0;
@@ -110,9 +112,13 @@ nav>a:hover,#sg>a:hover{
     height: 100vh;
     margin-left: 5vw;
     margin-right: 5vw;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-start;
 }
 .menuA {
-    display: block;
+    display: flex !important;
     width: 100%;
     font-size: 2rem !important;
     background-color: rgba(0, 0, 0, 0.700);
@@ -121,17 +127,8 @@ nav>a:hover,#sg>a:hover{
     -moz-transition: all 300ms;
     -o-transition: all 300ms;
     -ms-transition: all 300ms;
-}
-.menuA:first-child{
-    margin-top: 3vh;
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 0;
-}
-.menuA:last-child{
-    margin-top: 0;
-    margin-left: 0;
-    margin-right: 0;
+    max-height: 20vh;
+    justify-content: center;
 }
 /* KOMPATYBILNOŚĆ */
 
@@ -152,5 +149,19 @@ nav>a:hover,#sg>a:hover{
     }
     header>div>p:last-child{
         font-size: .8em;
+    }
+    .menuA{
+        font-size: 2em !important;
+    }
+}
+@media only screen and (max-width: 341px){
+    header>div>p:first-child{
+        font-size: .6em;
+    }
+    header>div>p:last-child{
+        font-size: .4em;
+    }
+    .menuA{
+        font-size: 1em !important;
     }
 }
