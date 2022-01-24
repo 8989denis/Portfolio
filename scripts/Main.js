@@ -40,7 +40,7 @@ function zapisz(arg){
 function wczytaj(){
     let arg = localStorage.getItem('tmp');
     if(arg == null){
-        localStorage.setItem('tmp','1')
+        localStorage.setItem('tmp','1');
         wczytaj();
     }
     else if(arg == 1){
